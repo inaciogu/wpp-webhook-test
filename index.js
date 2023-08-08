@@ -4,6 +4,10 @@ const app = express();
 
 app.use(express.json())
 
+app.get('/', (req, res) => {
+  res.send('Hello World')
+})
+
 app.post('/test', (req, res) => {
   console.log(req.body)
 })
