@@ -12,6 +12,10 @@ app.post('/test', (req, res) => {
   console.log(req.body)
 })
 
+app.get('/test', (req, res) => {
+  res.send('webhook test')
+})
+
 app.listen(3000, () => {
   console.log('server started')
 })
