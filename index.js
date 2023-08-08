@@ -8,11 +8,11 @@ app.get('/', (req, res) => {
   res.send('Hello World')
 })
 
-app.post('/test', (req, res) => {
+app.post('/webhook', (req, res) => {
   console.log(req.body)
 })
 
-app.get('/test', (req, res) => {
+app.get('/webhook', (req, res) => {
   res.send('webhook test')
 })
 
